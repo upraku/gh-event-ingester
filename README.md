@@ -40,7 +40,7 @@ On receiving an event from Github ( POST request to API), you verify the header 
   * Capture Decision logs (in the actual project implemenetation)
 
 ## Links referred
-  * [Github - Webhook events and payloads] (https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#webhook-payload-object-common-properties)
-  * [GitHub event types] (https://docs.github.com/en/developers/webhooks-and-events/events/github-event-types#forkevent)
-  * [Best practices for integrators] (https://docs.github.com/en/rest/guides/best-practices-for-integrators)
-  * [Git Webhooks with AWS Services] (https://aws.amazon.com/quickstart/architecture/git-to-s3-using-webhooks/)
+  * [Github - Webhook events and payloads](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#webhook-payload-object-common-properties)
+  * [GitHub event types](https://docs.github.com/en/developers/webhooks-and-events/events/github-event-types#forkevent)
+  * [Best practices for integrators](https://docs.github.com/en/rest/guides/best-practices-for-integrators)
+  * [Git Webhooks with AWS Services](https://aws.amazon.com/quickstart/architecture/git-to-s3-using-webhooks/)
