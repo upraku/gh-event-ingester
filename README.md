@@ -16,7 +16,7 @@ Record a release event from a public provider github and display them on a dashb
 
 ## Proposed Architecture (first cut :)) 
 
-![first cut of the architecture?](docs/github_ingest.svg)
+![first cut of the architecture?](docs/github_webhook.svg)
 
 ## Brief summary of the Idea
 Create an POST API end point for recieving events from github. In the github, add the API end point as the webhook for the required events.
