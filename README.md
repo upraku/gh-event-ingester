@@ -18,9 +18,9 @@ Record a release event from a public provider github and display them on a dashb
 
 ![first cut of the architecture?](docs/github_webhook.svg)
 
-## Brief summary of the Idea
-Create an POST API end point for recieving events from github. In the github, add the API end point as the webhook for the required events.
-On receiving an event from Github ( POST request to API), you verify the header signature for its authenticity using the secret key that was also configured in the github. Once the payload is authenticated, its pushed to a SNS topic. It is further processed by another lambda dedicated for processing the payload and saving in DynamoDB.
+## Brief summary of the idea
+Create a POST API end point for recieving events from github. In the github, add the API end point as the webhook for the required events using a secret key.
+On receiving an event from Github ( POST request to API), you verify the header signature for its authenticity, using the secret key that was configured in the github. Once the payload is authenticated, its pushed to a SNS topic. It is further processed by another lambda dedicated for processing the payload and saving in DynamoDB.
 
 ## What has been done so far
   * basic folder structer for the code created
@@ -29,12 +29,12 @@ On receiving an event from Github ( POST request to API), you verify the header 
   * test case has been written for a method
   * Generic Publish to SNS method created
   
-*Code is not production ready. Might change entirely on understanding the entire requirements*
+*Code is not production ready. Might design it differently on understanding the entire requirements*
 
 ## Things to be done
   * Write the contract of the POST API in OpenAPI, using swagger
   * Write the cloudformation code using CDK and write the test cases for the same
-  * Write lot more unit tests (Would have done more of TDD in the real scenario)
+  * Write more unit tests (Would have done more of TDD if not for the time constraint)
   * Design the DynamoDB Table structure
   * Lambda for processing and inserting data to DB
   * Capture Decision logs (in the actual project implemenetation)
