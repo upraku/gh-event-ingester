@@ -1,7 +1,8 @@
 # Github-event-ingester
 
 This repository consists of some basic code for creating an API which can be used as Github webhook to recieve events. 
-Time spent on this so far - approximately 4hours
+
+*Time spent on this so far - approximately 4hours*
 
 ## Scenario
 
